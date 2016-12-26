@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>List</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+	<ion-list no-lines>
+		<ion-item *ngFor="let location of locations.data">
+			<ion-avatar item-left>
+				<ion-icon name="pin"></ion-icon>
+			</ion-avatar>
+			<h2>{{location.title}}</h2>
+			<p>{{location.distance}} miles</p>
+		</ion-item>
+	</ion-list>
+
+</ion-content>
